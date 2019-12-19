@@ -7,7 +7,7 @@ This is the introduction to my final project yadda yadda
 ## Data Dictionary
 
 | Field | Description |
-| --- | --- |
+| :--- | :--- |
 | Field 1 | Description 1 |
 | Field 2 | Description 2 |
 | Field 3 | Description 3 |
