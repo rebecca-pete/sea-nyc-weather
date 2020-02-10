@@ -1,8 +1,8 @@
-# Final Project Title
+# Russian Troll Tweets
 
 ## Introduction
 
-This is the introduction to my final project yadda yadda 
+This project explores patterns seen in the 3 million Russion troll tweets posted between 2015-2017. Publicly available datasets provided by the website [538](https://github.com/fivethirtyeight/russian-troll-tweets).
 
 ## Data Dictionary
 
