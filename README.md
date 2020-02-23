@@ -1,11 +1,11 @@
-# Climate Change
+# US Weather History
 
 ## Introduction
 
-This project explores changing weather patterns in the last 40 years.
+This project explores changing weather patterns in the last 12 months.
 
-Uses the NOAA dataset.
-https://console.cloud.google.com/marketplace/details/noaa-public/ghcn-m?filter=solution-type:dataset&filter=category:climate&q=public%20data&id=01fd1b8f-7254-4ded-b71e-fcb389478d5b
+Uses the [538 US Weather History](https://github.com/fivethirtyeight/data/tree/master/us-weather-history) dataset.
+
 
 ## Data Dictionary
 
