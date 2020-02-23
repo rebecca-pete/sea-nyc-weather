@@ -1,15 +1,18 @@
-# US Coastal Weather Comparisons:
-#Seattle & New York City
+# U.S. Weather History
 
-## Introduction
+This folder contains data and code behind the story [What 12 Months Of Record-Setting Temperatures Looks Like Across The U.S.](http://fivethirtyeight.com/features/what-12-months-of-record-setting-temperatures-looks-like-across-the-u-s/).
 
-This project compares weather patterns of Seattle and New York City over a two-year period, beginning July 1, 2014 through June 30 2015.
+## Code
 
-Uses csv datasets referenced in the [538 US Weather History](https://github.com/fivethirtyeight/data/tree/master/us-weather-history) repo and created with source data pulled from [Weather Underground](http://wunderground.com).
+Code file | Description
+---|---------
+`wunderground_scraper.py` | Downloads weather data web pages from Weather Underground
+`wunderground_parser.py` | Parses the weather data from Weather Underground into a flat CSV file
+`visualize_weather.py` | Creates the visualization of the weather data
 
-## Data Dictionary
+## Data
 
-Field | Description
+Column | Description
 ---|---------
 `date` | The date of the weather record, formatted YYYY-M-D
 `actual_mean_temp` | The measured average temperature for that day
@@ -25,15 +28,4 @@ Field | Description
 `average_precipitation` | The average amount of rain or snow on that day since 1880
 `record_precipitation` | The highest amount of rain or snow on that day since 1880
 
-
-Keep writing more stuff here!
-
-## Important Links
-
-* [Final Report Notebook](report.ipynb)
-* [EDA Notebook](eda.ipynb)
-* Source: [Weather Underground](http://wunderground.com)
-  
-<!-- * [Link 1](http://www.google.com) - Some cool stuff
-* [Link 2](http://www.google.com) - More cool stuff
-* [Link 3](http://www.google.com) - Even more cool stuff -->
+Source: [Weather Underground](http://wunderground.com)
