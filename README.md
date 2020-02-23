@@ -1,5 +1,5 @@
 # US Coastal Weather Comparisons:
-#Seattle & New York City
+# Seattle & New York City
 
 ## Introduction
 
