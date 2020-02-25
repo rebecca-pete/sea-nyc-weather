@@ -24,9 +24,24 @@ Field | Description
 `actual_precipitation` | The measured amount of rain or snow for that day
 `average_precipitation` | The average amount of rain or snow on that day since 1880
 `record_precipitation` | The highest amount of rain or snow on that day since 1880
+`Month` | Month extracted from date.
+`Year` | Year extracted from date.
 
+## Final Report
+In this report we will compare the temperature and precipitation for Seattle and New York City from July 1st, 2014 through June 30, 2015.
 
-Keep writing more stuff here!
+We will use data sourced from Weather Underground.
+
+We will use line plots to visualize the following:
+
+We will compare the Actual Mean Temp for Seattle and New York City.
+We will compare the Record Max Temp for Seattle and New York City.
+We will compare the Actual Precipitation for Seattle and New York City.
+We will compare the Record Precipitation for Seattle and New York City.
+We will use scatter plots to visualize the following:
+
+We will compare the Actual Precipitation and Actual Mean Temp for Seattle.
+We will compare the Actual Precipitation and Actual Mean Temp for New York City.
 
 ## Important Links
 
@@ -34,6 +49,4 @@ Keep writing more stuff here!
 * [EDA Notebook](eda.ipynb)
 * Source: [Weather Underground](http://wunderground.com)
   
-<!-- * [Link 1](http://www.google.com) - Some cool stuff
-* [Link 2](http://www.google.com) - More cool stuff
-* [Link 3](http://www.google.com) - Even more cool stuff -->
+
