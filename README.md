@@ -34,7 +34,7 @@ Term                         | Description
 ---                          |---------
 dataframe                    | An object of data, similar to a matrix.
 matrix                       | A matrix is an array of arrays. A nested loop is an example of a matrix.
-method chaining              | A programming technique that allows the user to "chain" or attach sequential methods to a single object.
+method chaining              | A programming technique that allows the user to "chain" or attach subsequent methods to a single object.
 
 ## Method Dictionary
 
@@ -54,14 +54,12 @@ Method                       | Description
 `dt.month`                   | A method that returns a given date's month.
 `dt.year`                    | A method that returns a given date's year.
 `set_index()`                | A method that sets an index for a given input.
-`.apply`                     | A method or function whereby ...
 `.plot(figsize=(a,b))`       | A method for data visualization that returns a plot chart. The `figsize` parameter lets you control the size of the displayed chart.
 `.plot(kind='scatter', x='foo', y='bar', figsize=(a,b))` | A method for data visualization that returns a plot chart. The `kind` parameter lets you define the kind or type of plot to render. The `x` parameter represents the value for the x-axis. The `y` parameter represents the value for the y-axis. The `figsize` parameter represents the size of the displayed chart.
 
 For more information, visit the [pandas documentation](https://pandas.pydata.org/docs/) page.
 
-
-## Final Report
+## Report
 The following Jupyter Notebook compares the temperature and precipitation for Seattle and New York City from July 1st, 2014 through June 30, 2015, using data sourced from Weather Underground.
 
 You will use line plots to visualize comparisons of the following:
