@@ -1,14 +1,12 @@
-# US Weather Comparisons:
-# Seattle & New York City
+# Weather Comparisons: Seattle & New York City
 
 ## Introduction
 
-This project compares the weather behavior for Seattle and New York City over a twelve month period, beginning July 1, 2014 through June 30 2015.
+This report explores the temperature and precipitation data for Seattle and New York City. Using a Jupyter Notebook, you will explore and filter weather data to determine the temperature range at which both cities receive the most precipitation.
 
-### Source 
-This project uses csv datasets referenced in the [538 US Weather History](https://github.com/fivethirtyeight/data/tree/master/us-weather-history) repo and created with source data pulled from [Weather Underground](http://wunderground.com).
+This report uses data collected by [Weather Underground](http://wunderground.com) from July 1st, 2014 through June 30, 2015.
 
-## Data Dictionary
+## Data dictionary
 
 Field                   | Description
 ---                     |---------
@@ -33,14 +31,18 @@ Field                   | Description
 Term                         | Description
 ---                          |---------
 dataframe                    | An object of data, similar to a matrix.
-matrix                       | A matrix is an array of arrays. A nested loop is an example of a matrix.
+matrix                       | An array of arrays.
 method chaining              | A programming technique that allows the user to "chain" or attach subsequent methods to a single object.
 
-## Method Dictionary
+## API reference
+
+The following API reference section is divided by Python library.
+
+### pandas methods
 
 Method                       | Description
 ---                          |---------
-`.read_csv('foo.csv')`       | A method used to read a given file.
+`.read_csv('foo.csv')`       | A pandas library method used to read a given file.
 `.head()`                    | A method that displays the first five entries or rows of an object or dataframe instance.
 `.tail()`                    | A method that displays the last five entries or rows of an object or dataframe instance.
 `.shape`                     | A method whose output returns the number of rows and columns respectively, in a given dataframe.
@@ -54,28 +56,56 @@ Method                       | Description
 `dt.month`                   | A method that returns a given date's month.
 `dt.year`                    | A method that returns a given date's year.
 `set_index()`                | A method that sets an index for a given input.
-`.plot(figsize=(a,b))`       | A method for data visualization that returns a plot chart. The `figsize` parameter lets you control the size of the displayed chart.
+
+
+### numpy methods
+
+Method                       | Description
+---                          |---------
+`.read_csv('foo.csv')`       | A pandas library method used to read a given file.
+`.head()`                    | A method that displays the first five entries or rows of an object or dataframe instance.
+`.tail()`                    | A method that displays the last five entries or rows of an object or dataframe instance.
+`.shape`                     | A method whose output returns the number of rows and columns respectively, in a given dataframe.
+`.columns`                   | A method that returns the column names in a given dataframe.
+`.dtypes`                    | A method that returns the data types of a given input.
+`.DataFrames`                | A method that returns an object copy of a given input.
+`.merge()`                   | A method that merges two dataframes on a specified column.
+`.isnull()`                  | A method that returns a boolean value.
+`.sum()`                     | A method that adds given inputs together.
+`.to_datetime()`             | A method that explicitly converts dates to time.
+`dt.month`                   | A method that returns a given date's month.
+`dt.year`                    | A method that returns a given date's year.
+`set_index()`                | A method that sets an index for a given input.
+`.plot(figsize=(a,b))`       | A matplotlib.pyplot library method for data visualization that returns a plot chart. The `figsize` parameter lets you control the size of the displayed chart.
 `.plot(kind='scatter', x='foo', y='bar', figsize=(a,b))` | A method for data visualization that returns a plot chart. The `kind` parameter lets you define the kind or type of plot to render. The `x` parameter represents the value for the x-axis. The `y` parameter represents the value for the y-axis. The `figsize` parameter represents the size of the displayed chart.
 
+### matplotlib.pyplot methods
+
+Method                       | Description
+---                          |---------
+`.read_csv('foo.csv')`       | A pandas library method used to read a given file.
+`.head()`                    | A method that displays the first five entries or rows of an object or dataframe instance.
+`.tail()`                    | A method that displays the last five entries or rows of an object or dataframe instance.
+`.shape`                     | A method whose output returns the number of rows and columns respectively, in a given dataframe.
+`.columns`                   | A method that returns the column names in a given dataframe.
+`.dtypes`                    | A method that returns the data types of a given input.
+`.DataFrames`                | A method that returns an object copy of a given input.
+`.merge()`                   | A method that merges two dataframes on a specified column.
+`.isnull()`                  | A method that returns a boolean value.
+`.sum()`                     | A method that adds given inputs together.
+`.to_datetime()`             | A method that explicitly converts dates to time.
+`dt.month`                   | A method that returns a given date's month.
+`dt.year`                    | A method that returns a given date's year.
+`set_index()`                | A method that sets an index for a given input.
+`.plot(figsize=(a,b))`       | A matplotlib.pyplot library method for data visualization that returns a plot chart. The `figsize` parameter lets you control the size of the displayed chart.
+`.plot(kind='scatter', x='foo', y='bar', figsize=(a,b))` | A matplotlib.pyplot library method for data visualization that returns a plot chart. The `kind` parameter lets you define the kind or type of plot to render. The `x` parameter represents the value for the x-axis. The `y` parameter represents the value for the y-axis. The `figsize` parameter represents the size of the displayed chart.
+
 For more information, visit the [pandas documentation](https://pandas.pydata.org/docs/) page.
-
-## Report
-The following Jupyter Notebook compares the temperature and precipitation for Seattle and New York City from July 1st, 2014 through June 30, 2015, using data sourced from Weather Underground.
-
-You will use line plots to visualize comparisons of the following:
-
-1. The Actual Mean Temp for Seattle and New York City.
-1. The Record Max Temp for Seattle and New York City.
-1. The Actual Precipitation for Seattle and New York City.
-1. The Record Precipitation for Seattle and New York City.
-
-You will use scatter plots to visualize comparisons of the following:
-
-1. The Actual Precipitation and Actual Mean Temp for Seattle.
-1. The Actual Precipitation and Actual Mean Temp for New York City.
 
 ## Important Links
 
 * [Final Report Notebook](report.ipynb)
 * [EDA Notebook](eda.ipynb)
-* Source: [Weather Underground](http://wunderground.com)
+* Sources: [Weather Underground](http://wunderground.com), [538 US Weather History](https://github.com/fivethirtyeight/data/tree/master/us-weather-history)
+  
+**Note:** This project uses CSV files referenced in the [538 US Weather History](https://github.com/fivethirtyeight/data/tree/master/us-weather-history) repo. The weather data for these files was collected by [Weather Underground](http://wunderground.com).
