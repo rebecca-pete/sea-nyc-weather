@@ -46,10 +46,10 @@ Method                       | Description
 `.read_csv('foo.csv')`       | A method that reads a comma separated value (.csv) file(s) and saves it to a dataframe.
 `.head()`                    | A method that displays the first five rows of a dataframe instance.
 `.tail()`                    | A method that displays the last five rows of a dataframe instance.
-`.shape`                     | A method whose output returns the number of rows and columns respectively, in the given dataframe.
+`.shape`                     | A method whose output returns the number of rows and columns, respectively, in a given dataframe.
 `.columns`                   | A method that returns the column names in a given dataframe.
 `.dtypes`                    | A method that returns the data types of a given input.
-`.DataFrames`                | A method that returns an object copy of a given input.
+`.DataFrames`                | A method that converts its arguments to a DataFrame instance.
 `.merge()`                   | A method that merges two dataframes on a specified column.
 `.isnull()`                  | A method that detects missing values for an array-like object and returns an array of boolean values. Used to determine whether null values are present.
 `.sum()`                     | A method that adds given inputs together.
