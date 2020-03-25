@@ -30,9 +30,10 @@ Field                   | Description
 
 Term                         | Description
 ---                          |---------
-dataframe                    | An object of data, similar to a matrix.
+Pandas DataFrame             | An object of data, similar to a matrix. A Pandas Dataframe is a two-dimensional data structure of mutable size, arranged in rows and columns. Data types within columns can vary.
 matrix                       | An array of arrays.
 method chaining              | A programming technique that allows the user to "chain" or attach subsequent methods to a single object.
+data munging                 | The process of identifying and resolving invalid data in a dataset prior to analysis.
 
 ## API reference
 
@@ -42,63 +43,33 @@ The following API reference section is divided by Python library.
 
 Method                       | Description
 ---                          |---------
-`.read_csv('foo.csv')`       | A pandas library method used to read a given file.
-`.head()`                    | A method that displays the first five entries or rows of an object or dataframe instance.
-`.tail()`                    | A method that displays the last five entries or rows of an object or dataframe instance.
-`.shape`                     | A method whose output returns the number of rows and columns respectively, in a given dataframe.
+`.read_csv('foo.csv')`       | A method that reads a comma separated value (.csv) file(s) and saves it to a dataframe.
+`.head()`                    | A method that displays the first five rows of a dataframe instance.
+`.tail()`                    | A method that displays the last five rows of a dataframe instance.
+`.shape`                     | A method whose output returns the number of rows and columns respectively, in the given dataframe.
 `.columns`                   | A method that returns the column names in a given dataframe.
 `.dtypes`                    | A method that returns the data types of a given input.
 `.DataFrames`                | A method that returns an object copy of a given input.
 `.merge()`                   | A method that merges two dataframes on a specified column.
-`.isnull()`                  | A method that returns a boolean value.
+`.isnull()`                  | A method that detects missing values for an array-like object and returns an array of boolean values. Used to determine whether null values are present.
 `.sum()`                     | A method that adds given inputs together.
-`.to_datetime()`             | A method that explicitly converts dates to time.
-`dt.month`                   | A method that returns a given date's month.
-`dt.year`                    | A method that returns a given date's year.
-`set_index()`                | A method that sets an index for a given input.
-
+`.to_datetime()`             | A method that converts a given argument&mdash;such as a dataframe&mdash;to time.
+`dt.month`                   | A method that extracts a given date's month as a number. For example, January=1.
+`dt.year`                    | A method that extracts a given date's year.
+`set_index()`                | A method that takes in an argument&mdash;such as a dataframe&mdash;and lets you reset the index using a column value.
 
 ### numpy methods
 
 Method                       | Description
 ---                          |---------
-`.read_csv('foo.csv')`       | A pandas library method used to read a given file.
-`.head()`                    | A method that displays the first five entries or rows of an object or dataframe instance.
-`.tail()`                    | A method that displays the last five entries or rows of an object or dataframe instance.
-`.shape`                     | A method whose output returns the number of rows and columns respectively, in a given dataframe.
-`.columns`                   | A method that returns the column names in a given dataframe.
-`.dtypes`                    | A method that returns the data types of a given input.
-`.DataFrames`                | A method that returns an object copy of a given input.
-`.merge()`                   | A method that merges two dataframes on a specified column.
-`.isnull()`                  | A method that returns a boolean value.
-`.sum()`                     | A method that adds given inputs together.
-`.to_datetime()`             | A method that explicitly converts dates to time.
-`dt.month`                   | A method that returns a given date's month.
-`dt.year`                    | A method that returns a given date's year.
-`set_index()`                | A method that sets an index for a given input.
-`.plot(figsize=(a,b))`       | A matplotlib.pyplot library method for data visualization that returns a plot chart. The `figsize` parameter lets you control the size of the displayed chart.
-`.plot(kind='scatter', x='foo', y='bar', figsize=(a,b))` | A method for data visualization that returns a plot chart. The `kind` parameter lets you define the kind or type of plot to render. The `x` parameter represents the value for the x-axis. The `y` parameter represents the value for the y-axis. The `figsize` parameter represents the size of the displayed chart.
+`.nan`                       | A method that provides placeholders for null values. Often used with `.isnull()` for data cleanup or data munging.
 
 ### matplotlib.pyplot methods
 
 Method                       | Description
 ---                          |---------
-`.read_csv('foo.csv')`       | A pandas library method used to read a given file.
-`.head()`                    | A method that displays the first five entries or rows of an object or dataframe instance.
-`.tail()`                    | A method that displays the last five entries or rows of an object or dataframe instance.
-`.shape`                     | A method whose output returns the number of rows and columns respectively, in a given dataframe.
-`.columns`                   | A method that returns the column names in a given dataframe.
-`.dtypes`                    | A method that returns the data types of a given input.
-`.DataFrames`                | A method that returns an object copy of a given input.
-`.merge()`                   | A method that merges two dataframes on a specified column.
-`.isnull()`                  | A method that returns a boolean value.
-`.sum()`                     | A method that adds given inputs together.
-`.to_datetime()`             | A method that explicitly converts dates to time.
-`dt.month`                   | A method that returns a given date's month.
-`dt.year`                    | A method that returns a given date's year.
-`set_index()`                | A method that sets an index for a given input.
-`.plot(figsize=(a,b))`       | A matplotlib.pyplot library method for data visualization that returns a plot chart. The `figsize` parameter lets you control the size of the displayed chart.
-`.plot(kind='scatter', x='foo', y='bar', figsize=(a,b))` | A matplotlib.pyplot library method for data visualization that returns a plot chart. The `kind` parameter lets you define the kind or type of plot to render. The `x` parameter represents the value for the x-axis. The `y` parameter represents the value for the y-axis. The `figsize` parameter represents the size of the displayed chart.
+`.plot(figsize=(a,b))`       | A method for data visualization that returns a plot chart. The `figsize` parameter lets you control the size of the displayed chart.
+`.plot(kind='scatter', x='foo', y='bar', figsize=(a,b))` | A method for data visualization that returns a plot chart. The `kind` parameter lets you define the kind or type of plot to render. The `x` parameter represents the value for the x-axis. The `y` parameter represents the value for the y-axis. The `figsize` parameter represents the size of the displayed chart.
 
 For more information, visit the [pandas documentation](https://pandas.pydata.org/docs/) page.
 
